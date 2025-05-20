@@ -1,0 +1,81 @@
+/* Genel sıfırlamalar ve temel ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Profil kartı stil */
+.profile-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 320px;
+  width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Profil fotoğrafı */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #4a90e2;
+}
+
+/* İsim ve açıklama */
+.profile-card h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.profile-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Sosyal medya linkleri */
+.social-links a {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #4a90e2;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #1a5bb8;
+}
+
+/* Responsive ayarlar */
+@media (max-width: 480px) {
+  .profile-card {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+}
